@@ -24,10 +24,18 @@ export default () => {
   return (
     <div className="search-results">
       <div className="card-info">
-        <Card title="Definition" bordered={false} style={{ width: 300 }}>
-          <h3>{word.toUpperCase()}</h3>
-          <p>{meaning}</p>
-        </Card>
+        {/* <Card
+          className="card-body"
+          title="Definition"
+          bordered={false}
+          style={{ width: 300 }}
+        > */}
+        <h3>{word}</h3>
+        <em>
+          <hr />
+        </em>
+        <p>{meaning}.</p>
+        {/* </Card> */}
       </div>
     </div>
   );
